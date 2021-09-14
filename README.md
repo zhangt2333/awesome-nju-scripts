@@ -5,11 +5,18 @@ Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如自
 
 # 目录
 
-
-
-
+* [Latest](#latest)
+   * [研究生选课脚本 graduate-student-course-selector](#研究生选课脚本-graduate-student-course-selector)
+   * [自动健康填报 actions-NjuHealthReport](#自动健康填报-actions-njuhealthreport)
+* [Archived](#archived)
+* [Contribution](#contribution)
+* [License](#license)
 
 # Latest
+
+## 研究生选课脚本 `graduate-student-course-selector`
+
+* NJU 研究生选课脚本
 
 ## 自动健康填报 `actions-NjuHealthReport`
 * 自动进行每日健康填报
