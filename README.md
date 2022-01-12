@@ -1,11 +1,12 @@
 # Awesome-NJU-Scripts
 
-Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如自动健康填报、选课助手等，欢迎研究、使用、贡献 :smile:
+Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如校园网登录脚本、自动健康填报、选课助手等，欢迎研究、使用、贡献 :smile:
 
 
 # 目录
 
 * [Latest](#latest)
+   * [校园网登录脚本 nju-network-login-script](#校园网登录脚本-nju-network-login-script)
    * [研究生选课脚本 graduate-student-course-selector](#研究生选课脚本-graduate-student-course-selector)
    * [自动健康填报 actions-NjuHealthReport](#自动健康填报-actions-njuhealthreport)
 * [Archived](#archived)
@@ -14,6 +15,25 @@ Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如自
 
 # Latest
 
+## 校园网登录脚本 `nju-network-login-script`
+
+* 校园网登录脚本，主要是提供对密码隐藏回显的包装
+
+![](image/nju-network-login-script.png)
+
+* 使用方式：
+
+```
+# 下载
+curl https://raw.githubusercontent.com/zhangt2333/awesome-nju-scripts/main/nju-network-login-script/njunet.sh -o njunet.sh
+
+# 使用
+bash njunet.sh
+bash njunet.sh -u 学号
+bash njunet.sh -u 学号 -p 密码
+bash njunet.sh logout
+```
+
 ## 研究生选课脚本 `graduate-student-course-selector`
 
 * NJU 研究生选课脚本
@@ -21,6 +41,8 @@ Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如自
 ## 自动健康填报 `actions-NjuHealthReport`
 * 自动进行每日健康填报
 * 不需要自己购买服务器，也不需要自己配置服务器，真的 Serverless !!
+
+
 
 
 # Archived
