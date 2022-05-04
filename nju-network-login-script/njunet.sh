@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # written by zhangt2333
 
 # how to use (demo like follows):
@@ -20,7 +20,7 @@ for ((i=0; i<$#; i++)); do
   if [[ ${paras[$i]} == "-u" ]] && [[ $i+1 -lt $# ]]; then
     njuId=${paras[$i+1]}
   fi
-  
+
   if [[ ${paras[$i]} == "-p" ]] && [[ $i+1 -lt $# ]]; then
     password=${paras[$i+1]}
   fi
@@ -30,7 +30,6 @@ if [[ -z $njuId ]]; then
   echo "Enter NJU ID:"
   read njuId
 fi
-
 
 if [[ -z $password ]]; then
   echo "Enter password:"

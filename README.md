@@ -17,29 +17,41 @@ Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如校
 
 ## 校园网登录脚本 `nju-network-login-script`
 
-* 校园网登录脚本，主要是提供对密码隐藏回显的包装
+* 原理 —— 使用 curl 发送 HTTP 请求进行校园网认证：
+  ```
+  # 登录
+  curl http://p.nju.edu.cn/portal_io/login -X POST -d "username=学号&password=密码"
+  # 登出
+  curl http://p.nju.edu.cn/portal_io/logout -X GET
+  ```
 
-![](image/nju-network-login-script.png)
-
-* 使用方式：
-
-```
-# 下载
-curl https://raw.githubusercontent.com/zhangt2333/awesome-nju-scripts/main/nju-network-login-script/njunet.sh -o njunet.sh
-
-# 使用
-bash njunet.sh
-bash njunet.sh -u 学号
-bash njunet.sh -u 学号 -p 密码
-bash njunet.sh logout
-```
+* [该校园网登录 shell 脚本](nju-network-login-script/njunet.sh)，适用于 Linux/macOS 系统，主要提供对输入密码时的隐藏回显（如果不需要则上面 2 行命令可以满足你的上网需求），样例如下：
+  
+  ```bash
+  $ bash njunet.sh
+  Enter NJU ID:                        
+  12345678                # 输入的学号会回显
+  Enter password:         # 在这里输入密码不会回显或被记到命令行历史记录
+  {"reply_code":1,"reply_msg":"登陆成功!","request_uri":"/portal_io/login","request_time":1651673862}
+  ```
+  
+* 具体使用方式：
+  ```
+  # 下载
+  curl https://raw.githubusercontent.com/zhangt2333/awesome-nju-scripts/main/nju-network-login-script/njunet.sh -o njunet.sh
+  
+  # 登录校园网，以下三种方式任选其一
+  bash njunet.sh
+  bash njunet.sh -u 学号
+  bash njunet.sh -u 学号 -p 密码
+  
+  # 登出校园网
+  bash njunet.sh logout
+  ```
 
 ## 研究生选课脚本 `graduate-student-course-selector`
 
 * NJU 研究生选课脚本
-
-
-
 
 
 # Archived
