@@ -8,8 +8,8 @@ Some scripts about the life at NJU. 与 NJU 日常相关的一些脚本，如校
 * [Latest](#latest)
    * [校园网登录脚本 nju-network-login-script](#校园网登录脚本-nju-network-login-script)
    * [研究生选课脚本 graduate-student-course-selector](#研究生选课脚本-graduate-student-course-selector)
-   * [自动健康填报 actions-NjuHealthReport](#自动健康填报-actions-njuhealthreport)
 * [Archived](#archived)
+  * [自动健康填报 actions-NjuHealthReport](#自动健康填报-actions-njuhealthreport)
 * [Contribution](#contribution)
 * [License](#license)
 
@@ -38,15 +38,20 @@ bash njunet.sh logout
 
 * NJU 研究生选课脚本
 
-## 自动健康填报 `actions-NjuHealthReport`
-* 自动进行每日健康填报
-* 不需要自己购买服务器，也不需要自己配置服务器，真的 Serverless !!
 
 
 
 
 # Archived
 
+## 自动健康填报 `actions-NjuHealthReport`
+<details>
+<summary>由于作者已润，该脚本 archived!，点击查看旧描述</summary>
+
+* 自动进行每日健康填报
+* 不需要自己购买服务器，也不需要自己配置服务器，真的 Serverless !!
+
+</details>
 
 
 # Contribution
@@ -57,4 +62,5 @@ Looking forward to your contribution!
 
 # License
 
-MIT：`被授权人有权利在软件和软件的所有副本中包含版权声明和许可声明的前提下，使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。授权人不为被授权人行为承担任何责任，且无义务对著作进行更新。`
+MIT License: 
+> 被授权人有权利在软件和软件的所有副本中包含版权声明和许可声明的前提下，使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。授权人不为被授权人行为承担任何责任，且无义务对著作进行更新。
